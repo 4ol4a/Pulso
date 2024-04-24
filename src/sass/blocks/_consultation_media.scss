@@ -1,0 +1,36 @@
+@media (max-width: 1200px){
+.consultation{
+    padding: 65px 0 65px 0;
+}
+}
+
+@media (max-width: 991px){
+.consultation{
+    padding: 90px 0 90px 0;
+}
+}
+
+@media (max-width: 767px){
+    .consultation{
+        padding: 65px 0 65px 0;
+        &__wrapper{
+            align-items: flex-start;
+        }
+    } 
+}
+
+@media (max-width: 575px){
+.consultation{
+    padding: 65px 0 65px 0;
+    .title__consultation{
+        text-align: center;
+    }
+    &__descr{
+        text-align: center;
+    }
+    &__wrapper{
+        align-items: center;
+        justify-content: center;
+    }
+} 
+}
