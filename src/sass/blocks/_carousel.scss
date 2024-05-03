@@ -1,12 +1,12 @@
 .carousel{
     padding: 81px 0;
+    // background-color: cadetblue;
     &__inner{
-        
         position: relative;
         width: 750px;
         margin: 0 auto;
     }
-    .prev{
+    .slick-prev{
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -18,7 +18,7 @@
             height: 50px;
         }
     }
-    .next{
+    .slick-next{
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -28,13 +28,6 @@
         img{
             width: 31px;
             height: 50px;
-        }
-    }
-
-    .tns-item{
-        img{
-            display: block;
-            margin: 0 auto;
         }
     }
     // .slick-prev{
@@ -56,6 +49,87 @@
     //     right: -67px;
     //     border: none;
     //     background-color: #fff;
+    //     img{
+    //         width: 31px;
+    //         height: 50px;
+    //     }
+    // }
+    // .swiper-button-prev{
+    // position: absolute;
+    // top: 50%;
+    // transform: translateY(-50%);
+    // left: -67px;
+    // border: none;
+    // background-color: #fff;
+    //     img{
+    //         width: 31px;
+    //         height: 50px;
+    //     }
+    // }
+    // .swiper-button-next{
+    //     position: absolute;
+    //     top: 50%;
+    //     transform: translateY(-50%);
+    //     right: -67px;
+    //     border: none;
+    //     background-color: #fff;
+    //     img{
+    //         width: 31px;
+    //         height: 50px;
+    //     }
+    // }
+    // .prev{
+    //     position: absolute;
+    //     top: 50%;
+    //     transform: translateY(-50%);
+    //     left: -67px;
+    //     border: none;
+    //     background-color: #fff;
+    //     img{
+    //         width: 31px;
+    //         height: 50px;
+    //     }
+    // }
+    // .next{
+    //     position: absolute;
+    //     top: 50%;
+    //     transform: translateY(-50%);
+    //     right: -67px;
+    //     border: none;
+    //     background-color: #fff;
+    //     img{
+    //         width: 31px;
+    //         height: 50px;
+    //     }
+    // }
+
+    // .tns-item{
+    //     img{
+    //         display: block;
+    //         margin: 0 auto;
+    //     }
+    // }
+
+
+    // .owl-prev{
+    //     position: absolute;
+    //     top: 50%;
+    //     transform: translateY(-50%);
+    //     left: -67px;
+    //     border: none;
+    //     background-color: #fff;
+    //     img{
+    //         width: 31px;
+    //         height: 50px;
+    //     }
+    // }
+    // .owl-next{
+    // position: absolute;
+    // top: 50%;
+    // transform: translateY(-50%);
+    // right: -67px;
+    // border: none;
+    // background-color: #fff;
     //     img{
     //         width: 31px;
     //         height: 50px;

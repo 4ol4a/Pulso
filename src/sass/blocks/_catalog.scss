@@ -1,0 +1,168 @@
+.catalog{
+    padding-bottom: 60px;
+    &__tabs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        list-style-type: none;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    &__tab{
+        width: 220px;
+        height: 50px;
+        border: 2px solid rgb(208, 208, 208);
+
+        margin: 0 5px;
+
+        color: rgb(107, 107, 107);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        transform: skewx(-25deg);
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+            border: none;
+        }
+        div{
+            transform: skewx(25deg);
+        }
+        &_active{
+            color: #fff;
+            background-color: $main-color;
+            border: none;
+        }
+    }
+    &__content{
+        margin-top: 60px;
+        display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &_active{
+            display: flex;
+        }
+
+    }
+    &-item{
+        width: 300px;
+        min-height: 440px;
+        box-sizing: border-box;
+        border: 2px solid rgb(232, 232, 232);
+        padding: 20px 20px 26px 20px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        &__img{
+            display: block;
+            margin: 0 auto;
+            height: 200px;
+            max-width: 100%;
+        }
+        &__subtitle{
+            color: rgb(13, 13, 13);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        &__descr{
+            color: rgb(13, 13, 13);
+            margin-top: 16px;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: center;
+        }
+        &__link{
+            display: block;
+            margin-top: 16px;
+            color: $main-color;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+        }
+        &__footer{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__old-price{
+            color: rgb(85, 85, 85);
+            font-size: 14px;
+            font-weight: 300;
+            // line-height: 14px;
+            text-decoration-line: line-through;
+        }
+        &__new-price{
+            color: rgb(5, 5, 5);
+            font-size: 20px;
+            font-weight: 700;
+            // line-height: 20px;
+        }
+        &__wrapper{
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &__content{
+            width: 50%;
+            margin-right: 0px;
+            transform: translateX(-108%);
+            transition: 0.5s all;
+            &_active{
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+        &__list{
+            position: relative;
+            width: 50%;
+            margin-right: 20px;
+            transform: translateX(4%);
+            padding-right: 20px;
+            transition: 0.5s all;
+            padding-left: 20px;
+            margin-bottom: 0;
+            list-style-type: none;
+            li{
+                position: relative;
+                color: rgb(85, 85, 85);
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 21px;
+                margin-bottom: 20px;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    height: 5px;
+                    width: 5px;
+                    background-color: $main-color;
+                    left: -14px;
+                    top: 7px;
+                }
+            }
+            &_active{
+                transform: translateX(-100%);
+                margin-right: 0px;
+            }
+        }
+        &__back{
+            display: block;
+            text-align: center;
+            color: rgb(199, 1, 1);
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 45px;
+
+        }
+    }
+    hr{
+        background: rgb(232, 232, 232);
+        margin-top: 17px;
+        margin-bottom: 17px;
+        border-bottom: none;
+    }
+
+}
